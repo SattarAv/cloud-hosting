@@ -1,0 +1,38 @@
+// navbar
+.navbar{
+    background-color: $color-primary;
+    color: $color-secondary;
+    height: 70px;
+
+   .flex{
+    justify-content: space-between;
+   }
+
+    ul {
+        display: flex;
+    }
+
+    a{
+        color: $color-secondary;
+        padding: 10px;
+        
+        &:hover{
+            border-bottom: 2px solid $color-secondary;
+        }
+    }
+}
+
+// showcase
+.showcase{
+    height: 400px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    position: relative;
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        margin: 20px 0;
+    }
+}
