@@ -2,8 +2,9 @@
 .navbar{
     background-color: $color-primary;
     color: $color-secondary;
-    height: 70px;
-
+    height: 55px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    
    .flex{
     justify-content: space-between;
    }
@@ -59,11 +60,11 @@
 .showcase-form{
     position: relative;
     top: 60px;
-    height: 350px;
-    width: 400px;
+    height: 330px;
+    width: 390px;
     padding: 40px;
     z-index: 100;
-    // justify-self: flex-end;
+    justify-self: flex-end;
 
     .form-control{
         margin: 30px 0;
@@ -79,6 +80,27 @@
 
         &:focus{
             outline: none;
+        }
+    }
+}
+
+// stats
+.stats{
+    padding-top: 100px;
+
+    .stats-heading{
+        width: 500px;
+        margin: auto;
+    }
+
+    .grid {
+        h3{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: bold;
         }
     }
 }

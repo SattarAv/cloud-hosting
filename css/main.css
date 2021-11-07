@@ -57,6 +57,10 @@ img {
   height: 100%;
 }
 
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -85,10 +89,95 @@ img {
   border: 1px solid #fff;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem 0;
+}
+
+.m-2 {
+  margin: 1.5rem 0;
+}
+
+.m-3 {
+  margin: 2rem 0;
+}
+
+.m-4 {
+  margin: 3rem 0;
+}
+
+.m-5 {
+  margin: 4rem 0;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem 0;
+}
+
+.p-2 {
+  padding: 1.5rem 0;
+}
+
+.p-3 {
+  padding: 2rem 0;
+}
+
+.p-4 {
+  padding: 3rem 0;
+}
+
+.p-5 {
+  padding: 4rem 0;
+}
+
 .navbar {
   background-color: #047aed;
   color: #fff;
-  height: 70px;
+  height: 55px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.253);
 }
 
 .navbar .flex {
@@ -145,10 +234,11 @@ img {
 .showcase-form {
   position: relative;
   top: 60px;
-  height: 350px;
-  width: 400px;
+  height: 330px;
+  width: 390px;
   padding: 40px;
   z-index: 100;
+  justify-self: flex-end;
 }
 
 .showcase-form .form-control {
@@ -167,5 +257,23 @@ img {
 .showcase-form input[type='text']:focus,
 .showcase-form input[type='email']:focus {
   outline: none;
+}
+
+.stats {
+  padding-top: 100px;
+}
+
+.stats .stats-heading {
+  width: 500px;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 30px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
