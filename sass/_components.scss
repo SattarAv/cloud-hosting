@@ -40,6 +40,24 @@
     background-color: transparent;
     border: 1px solid $color-secondary;
 }
+
+// text sizes
+.lead{
+    font-size: 20px;
+}
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+}
+.xl{
+    font-size: 4rem;
+}
+
 .text-center{
     text-align: center;
 }
@@ -110,4 +128,26 @@
 }
 .p-5{
     padding: 4rem 0;
+}
+
+// backgrounds and colored buttons
+.bg-primary, .btn-primary {
+    background-color: $color-primary;
+    color: $color-secondary;
+}
+
+//secondary
+.bg-dark-blue, .btn-dark-blue {
+    background-color: $color-dark-blue;
+    color: $color-secondary;
+}
+
+.bg-dark, .btn-dark {
+    background-color: $color-dark;
+    color: $color-secondary;
+}
+
+.bg-light, .btn-light {
+    background-color: $color-light;
+    color: color-tertiary;
 }
