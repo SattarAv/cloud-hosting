@@ -89,7 +89,7 @@
     padding-top: 100px;
 
     .stats-heading{
-        width: 500px;
+        width: 55%;
         margin: auto;
     }
 
@@ -127,5 +127,28 @@
 .cloud{
     .grid{
         grid-template-columns: 4fr 3fr;
+    }
+}
+
+// Languages
+.languages{
+    
+    .flex{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        text-align: center;
+        margin: 18px 10px 40px;
+        transition: transform 0.2s ease-in;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+
+        h4{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
     }
 }
