@@ -1,8 +1,11 @@
-.container{
-    @include container;
-}
 .flex{
     @include flex;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: 0 auto;
+    padding: 0 40px;
 }
 .grid{
     display: grid;
@@ -149,4 +152,17 @@
 .bg-light, .btn-light {
     background-color: $color-light;
     color: color-tertiary;
+}
+
+.bg-primary, 
+.btn-primary,
+.bg-dark-blue, 
+.btn-dark-blue,
+.bg-dark, 
+.btn-dark,
+.bg-light,
+.btn-light{
+    a{
+        color: #fff;
+    }
 }
