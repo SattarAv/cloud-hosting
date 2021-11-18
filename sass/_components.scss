@@ -64,6 +64,28 @@
     text-align: center;
 }
 
+// Alert
+.alert{
+    background-color: $color-light;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+
+    i{
+        margin-right: 10px;
+    }
+}
+
+.alert-success{
+    background-color: $color-success;
+    color: $color-secondary;
+}
+
+.alert-error{
+    background-color: $color-error;
+    color: $color-secondary;
+}
+
 // margin top and bottom
 .my-1{
     margin: 1rem 0;
@@ -83,19 +105,19 @@
 
 // all margins
 .m-1{
-    margin: 1rem 0;
+    margin: 1rem;
 }
 .m-2{
-    margin: 1.5rem 0;
+    margin: 1.5rem;
 }
 .m-3{
-    margin: 2rem 0;
+    margin: 2rem;
 }
 .m-4{
-    margin: 3rem 0;
+    margin: 3rem;
 }
 .m-5{
-    margin: 4rem 0;
+    margin: 4rem;
 }
 
 // padding top and bottom
@@ -117,19 +139,19 @@
 
 // all paddings
 .p-1{
-    padding: 1rem 0;
+    padding: 1rem;
 }
 .p-2{
-    padding: 1.5rem 0;
+    padding: 1.5rem;
 }
 .p-3{
-    padding: 2rem 0;
+    padding: 2rem;
 }
 .p-4{
-    padding: 3rem 0;
+    padding: 3rem;
 }
 .p-5{
-    padding: 4rem 0;
+    padding: 4rem;
 }
 
 // backgrounds and colored buttons
@@ -165,4 +187,22 @@
     a{
         color: #fff;
     }
+}
+
+// Text color
+.text-primary {
+    color: $color-primary !important;
+}
+
+//secondary
+.text-dark-blue {
+    color: $color-dark-blue;
+}
+
+.text-dark {
+    color: $color-dark;
+}
+
+.text-light {
+    color: $color-light;
 }

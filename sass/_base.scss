@@ -4,6 +4,8 @@ $color-tertiary:#333;
 $color-dark-blue: #1c3fa8;
 $color-dark: #002240;
 $color-light: #f4f4f4;
+$color-success: #5cb85c;
+$color-error: #d9534f;
 
 
 @mixin flex {
@@ -43,4 +45,9 @@ p{
 img{
     width: 100%;
 }
-
+code,
+pre{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
