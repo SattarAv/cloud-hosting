@@ -1,0 +1,53 @@
+$color-primary:#047aed;
+$color-secondary:#fff;
+$color-tertiary:#333;
+$color-dark-blue: #1c3fa8;
+$color-dark: #002240;
+$color-light: #f4f4f4;
+$color-success: #5cb85c;
+$color-error: #d9534f;
+
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: $color-tertiary;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: $color-tertiary;
+}
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+code,
+pre{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}

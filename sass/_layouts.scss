@@ -1,0 +1,260 @@
+// navbar
+.navbar{
+    background-color: $color-primary;
+    color: $color-secondary;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    
+   .flex{
+    justify-content: space-between;
+   }
+
+    ul {
+        display: flex;
+    }
+
+    a{
+        color: $color-secondary;
+        padding: 10px;
+        
+        &:hover{
+            border-bottom: 2px solid $color-secondary;
+        }
+    }
+}
+
+// showcase
+.showcase{
+    height: 400px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    position: relative;
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        margin: 20px 0;
+        width: 86%;
+    }
+
+    .grid{
+        overflow: visible;
+        grid-template-columns: 55% 45%;
+        gap: 30px;
+    }
+
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+        left: 0;
+        height: 100px;
+        background: $color-secondary;
+        transform: skewY(-3deg);
+        -webkit-transform: skewY(-3deg);
+        -moz-transform: skewY(-3deg);
+        -ms-transform: skewY(-3deg);
+    }
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+
+    .form-control{
+        margin: 30px 0;
+    }
+    
+    input[type='text'],
+    input[type='email']{
+        border: 0;
+        border-bottom: 1px solid #b4becd;
+        width: 100%;
+        padding: 3px;
+        font-size: 16px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.showcase-text{
+    animation: slideInFromLeft 1s ease-in;
+}
+
+// stats
+.stats{
+    padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in;
+
+    .stats-heading{
+        width: 55%;
+        margin: auto;
+    }
+
+    .grid {
+        h3{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+// Cli
+.cli{
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        img{
+            border-radius: 5px;
+            width: 92%;
+        }
+
+        &> *:first-child{
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+    }
+}
+
+// Cloud
+.cloud{
+    .grid{
+        grid-template-columns: 4fr 3fr;
+    }
+}
+
+// Languages
+.languages{
+    
+    .flex{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        text-align: center;
+        margin: 18px 10px 40px;
+        transition: transform 0.2s ease-in;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+
+        h4{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// features
+.features-head,.docs-head {
+    img{
+        width: 200px;
+        justify-self: flex-end;
+    }
+}
+
+.features-main{
+    .card > i{
+        margin-right: 20px;
+    }
+
+    .grid{
+        &> *:first-child{
+            grid-column: 1 / span 3;
+        }
+        &> *:nth-child(2){
+            grid-column: 1 / span 2;
+        }
+        
+    }
+}
+
+//docs
+.docs-main{
+
+    h3{
+        margin: 20px 0;
+    }
+
+    .grid{
+        grid-template-columns: 1fr 2fr;
+        align-items: flex-start;
+    }
+
+    nav li {
+        font-size: 17px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    a{
+        color: black;
+
+        &:hover{
+            font-weight: bold;
+        }
+    }   
+}
+
+// footer
+.footer{
+    .social{
+        a{
+            margin: 0 10px;
+        }
+    }
+}
+
+// Animations
+@keyframes slideInFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

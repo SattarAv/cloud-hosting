@@ -1,0 +1,208 @@
+.flex{
+    @include flex;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: 0 auto;
+    padding: 0 40px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    background-color: $color-secondary;
+    border-radius: 10px;
+    color: $color-tertiary;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: $color-primary;
+    color: $color-secondary;
+    border: none;
+    border-radius: 5px;
+
+    &:hover{
+        transform: scale(0.97);
+    }
+}
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid $color-secondary;
+}
+
+// text sizes
+.lead{
+    font-size: 20px;
+}
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+}
+.xl{
+    font-size: 4rem;
+}
+.text-center{
+    text-align: center;
+}
+
+// Alert
+.alert{
+    background-color: $color-light;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+
+    i{
+        margin-right: 10px;
+    }
+}
+
+.alert-success{
+    background-color: $color-success;
+    color: $color-secondary;
+}
+
+.alert-error{
+    background-color: $color-error;
+    color: $color-secondary;
+}
+
+// margin top and bottom
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+
+// all margins
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 1.5rem;
+}
+.m-3{
+    margin: 2rem;
+}
+.m-4{
+    margin: 3rem;
+}
+.m-5{
+    margin: 4rem;
+}
+
+// padding top and bottom
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+
+// all paddings
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 1.5rem;
+}
+.p-3{
+    padding: 2rem;
+}
+.p-4{
+    padding: 3rem;
+}
+.p-5{
+    padding: 4rem;
+}
+
+// backgrounds and colored buttons
+.bg-primary, .btn-primary {
+    background-color: $color-primary;
+    color: $color-secondary;
+}
+
+//secondary
+.bg-dark-blue, .btn-dark-blue {
+    background-color: $color-dark-blue;
+    color: $color-secondary;
+}
+
+.bg-dark, .btn-dark {
+    background-color: $color-dark;
+    color: $color-secondary;
+}
+
+.bg-light, .btn-light {
+    background-color: $color-light;
+    color: color-tertiary;
+}
+
+.bg-primary, 
+.btn-primary,
+.bg-dark-blue, 
+.btn-dark-blue,
+.bg-dark, 
+.btn-dark,
+.bg-light,
+.btn-light{
+    a{
+        color: #fff;
+    }
+}
+
+// Text color
+.text-primary {
+    color: $color-primary !important;
+}
+
+//secondary
+.text-dark-blue {
+    color: $color-dark-blue;
+}
+
+.text-dark {
+    color: $color-dark;
+}
+
+.text-light {
+    color: $color-light;
+}
