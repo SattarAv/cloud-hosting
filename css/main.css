@@ -556,5 +556,11 @@ pre {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
+  .xl {
+    font-size: 2rem;
+  }
+  .showcase h1 {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
